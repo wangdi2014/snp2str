@@ -1,16 +1,22 @@
+SNP2Str : Mapping PDB seq and UniProt seq 
+=========================================
+
+:Authors: Lin An; Difei Wang, Ph.D.
+:Emails: difei.wang AT georgetown.edu or wang.difei AT yahoo.com or difei.wang AT nih.gov
+
 Description
+===========
 
-The python code here was developed by Mr. Lin An and myself at ICBI, Georgetown University from 2013-2014.
-Mr. An was a student intern in our center. Now, he is pursuing his Ph.D degree in one of the top bioinformatics programs in the United States.
-This is the key part of our snp2str analysis package.
+The python code here was developed by Mr. Lin An and Difei Wang at Georgetown University.
+This is the key part of our snp2str analysis package. If you use this code for your work, please cite the following paper. Thanks!
 
-Packages needed
+Wang, D. et al. SNP2Structure: A public and versatile resource for mapping and modeling msSNPs on human protein structures. Comput. and Struct. Biotech. J. 2015, 13, 514-519.	
 
-1. Download Modeller 9.11
-https://salilab.org/modeller/9.11/modeller-9.11.dmg
-Then obtain license and install
+Requirement
+===========
 
-2. Download Python and BioPython, compile and install
+  - Python and BioPython
+  - Clustalw2
 
-3. Download Clustalw2, compile and install
-
+Running steps
+=============
