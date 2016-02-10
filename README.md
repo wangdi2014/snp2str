@@ -1,8 +1,9 @@
 SNP2Str : Mapping PDB seq and UniProt seq 
 =========================================
 
-:Authors: Lin An; Difei Wang, Ph.D.
-:Emails: difei.wang AT georgetown.edu or wang.difei AT yahoo.com or difei.wang AT nih.gov
+Authors: Lin An; Difei Wang, Ph.D.
+
+Emails: difei.wang AT georgetown.edu or wang.difei AT yahoo.com or difei.wang AT nih.gov
 
 Description
 ===========
