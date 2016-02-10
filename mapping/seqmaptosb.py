@@ -142,7 +142,7 @@ def retriving(a,b,c):
     uniid     = c
     my_record = []
     log       = open('pdb.fasta','w')
-    seqpy     = Popen(["python","pdb_seq.py","-a",pdbid],stdout=PIPE,stderr=PIPE)
+    seqpy     = Popen(["python","pdb_seq.py",pdbid],stdout=PIPE,stderr=PIPE)
     stdout    = seqpy.communicate()[0]
     log.write(stdout)
     wait      = seqpy.wait()
