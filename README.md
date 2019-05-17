@@ -21,7 +21,18 @@ Requirement
 
 Installation
 ============
+  - install miniconda or anaconda
 
+  - conda create snp2str python=2.7
+  - conda activate snp2str
+  - conda install -c bioconda biopython
+  - conda install -c bioconda clustalw
+
+or 
+  - conda create -f snp2str.yml
 
 Running steps
 =============
+  - conda activate snp2str
+  - cd mapping
+  - ./run.sh

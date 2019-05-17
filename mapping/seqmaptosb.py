@@ -172,7 +172,7 @@ def retriving(a,b,c):
 # Perform multiple sequence alignment
 def alignseq():
 #   clustalw_exe = r"/home/wangdi/apps/clustalw2"
-    clustalw_exe = r"/Users/wangdi/apps/anaconda3/envs/py2/bin/clustalw"
+    clustalw_exe = r"/Users/wangdi/apps/anaconda3/envs/snp2str/bin/clustalw"
     cline = ClustalwCommandline(clustalw_exe, infile="test.fasta", outorder="input")
     assert isfile(clustalw_exe), "Clustal W executable missing"
     stdout = cline()    
