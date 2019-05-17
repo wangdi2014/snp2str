@@ -22,6 +22,12 @@ from os                     import chdir
 from sets		    import Set
 import collections
 
+## bypass certi problem
+## https://thomas-cokelaer.info/blog/2016/01/python-certificate-verified-failed/
+##
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 # ===Constants===
 
 parser = PDBParser()
@@ -153,7 +159,7 @@ def retriving(a,b,c):
         if r[0][-1]==chainid:
             my_record.append(seq_record)
     seqfile.close()
-    url = 'http://www.uniprot.org/uniprot/'+uniid+'.fasta'
+    url = 'https://www.uniprot.org/uniprot/'+uniid+'.fasta'
     seqfile2 = urlopen(url)
     for seq_record in parse(seqfile2, "fasta"):
         r = seq_record.id.split('|')
@@ -165,7 +171,8 @@ def retriving(a,b,c):
 
 # Perform multiple sequence alignment
 def alignseq():
-    clustalw_exe = r"/home/wangdi/apps/clustalw2"
+#   clustalw_exe = r"/home/wangdi/apps/clustalw2"
+    clustalw_exe = r"/Users/wangdi/apps/anaconda3/envs/py2/bin/clustalw"
     cline = ClustalwCommandline(clustalw_exe, infile="test.fasta", outorder="input")
     assert isfile(clustalw_exe), "Clustal W executable missing"
     stdout = cline()    
