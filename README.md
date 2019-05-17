@@ -19,5 +19,9 @@ Requirement
   - Python and BioPython
   - Clustalw2
 
+Installation
+============
+
+
 Running steps
 =============
